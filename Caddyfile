@@ -1,0 +1,3 @@
+oukra.net {
+  reverse_proxy app:3000
+}

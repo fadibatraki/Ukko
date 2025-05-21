@@ -1,0 +1,118 @@
+{
+  "Pagination": {
+    "Previous": "Previous",
+    "Next": "Next"
+  },
+  "Header": {
+    "home": "Home",
+    "products": "Products",
+    "searchProducts": "Search products..."
+  },
+  "HomePage": {
+    "featuredProducts": "Featured Products",
+    "viewAll": "View All"
+  },
+  "Product": {
+    "featured": "Featured",
+    "addToCart": "Add to Cart",
+    "added": "Added"
+  },
+  "ProductsPage": {
+    "allProducts": "All Products",
+    "loadingProducts": "Loading products..."
+  },
+  "ProductDetails": {
+    "backToProducts": "Back to Products",
+    "aboutThisProduct": "About this product",
+    "saveForLater": "Save for Later",
+    "signupForNotification": "Sign up for notifications when this item becomes available again.",
+    "notifyMe": "Notify Me",
+    "freeShipping": "Free Shipping",
+    "onOrdersOver50": "On orders over $50",
+    "twoHundred": "2-Year Warranty",
+    "fullCoverage": "Full coverage",
+    "featured": "Featured",
+    "available": "available"
+  },
+  "CartPage": {
+    "loadingCart": "Loading cart...",
+    "yourCart": "Your Cart",
+    "cartIsEmpty": "Your cart is empty",
+    "clearCart": "Clear Cart",
+    "continueShopping": "Continue Shopping",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "free": "Free",
+    "proceedToCheckout": "Proceed to Checkout"
+  },
+  "ProductFilter": {
+    "filters": "Filters",
+    "searchProducts": "Search products...",
+    "selectCategories": "Select categories...",
+    "noProductsFound": "No products found",
+    "categories": "Categories",
+    "searchCategories": "Search categories...",
+    "noCategoriesFound": "No categories found",
+    "priceRange": "Price Range",
+    "applyFilters": "Apply Filters",
+    "resetFilters": "Reset Filters"
+  },
+  "AboutUs": {
+    "companyName": "Oukra",
+    "title": "About Us",
+    "subtitle": "Oukra Company Pioneering Air Conditioning & Refrigeration Solutions \"Building a More Comfortable and Sustainable Future\"",
+    "vision": {
+      "title": "Our Vision",
+      "description": "To deliver innovative, sustainable climate-control solutions that exceed customer expectations"
+    },
+    "whyChoose": {
+      "title": "Why Choose Oukra?",
+      "points": [
+        "- 10+ Years of Expertise: Trusted solutions since 2013",
+        "- Strong Distribution: Reliable local and international logistics",
+        "- 24/7 Support: After-sales service and technical assistance",
+        "- Certified Quality"
+      ]
+    },
+    "operations": {
+      "title": "Our Operations",
+      "description": "Locally and Globally ✔ Full coverage across the world"
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "section1": {
+        "title": "Advanced Cooling Systems:",
+        "points": [
+          "- Central & ducted air conditioning units",
+          "- Commercial & industrial refrigeration solutions"
+        ]
+      },
+      "section2": {
+        "title": "Premium Spare Parts:",
+        "points": [
+          "- Import of high-quality refrigeration components",
+          "- End-to-end technical support and maintenance"
+        ]
+      }
+    }
+  },
+  "CTA": {
+    "companyName": "Oukra Company",
+    "title": "Contact Us",
+    "subtitle": "Founded in 2013, Oukra is a leading importer and exporter of cutting-edge air conditioning and refrigeration systems. We obtained our commercial trademark rights in 2015 , solidifying our commitment to *(quality, reliability, and innovation)."
+  },
+  "Footer": {
+    "subtitle": "Oukra Company Pioneering Air Conditioning & Refrigeration Solutions \"Building a More Comfortable and Sustainable Future\"",
+    "address": "Address",
+    "info": "Info",
+    "latestBlog": "Latest Blog",
+    "links": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About Us",
+      "contact": "Contact"
+    }
+  }
+}

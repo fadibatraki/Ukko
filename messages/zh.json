@@ -1,0 +1,112 @@
+{
+  "Pagination": {
+    "Previous": "上一页",
+    "Next": "下一页"
+  },
+  "Header": {
+    "home": "首页",
+    "products": "产品",
+    "searchProducts": "搜索商品..."
+  },
+  "HomePage": {
+    "featuredProducts": "精选产品",
+    "viewAll": "查看全部"
+  },
+  "Product": {
+    "featured": "推荐",
+    "addToCart": "加入购物车",
+    "added": "已添加"
+  },
+  "ProductsPage": {
+    "allProducts": "全部产品",
+    "loadingProducts": "加载产品中..."
+  },
+  "ProductDetails": {
+    "backToProducts": "返回产品列表",
+    "aboutThisProduct": "关于此产品",
+    "saveForLater": "稍后购买",
+    "signupForNotification": "登记以便在此商品补货时接收通知。",
+    "notifyMe": "通知我",
+    "freeShipping": "免运费",
+    "onOrdersOver50": "订单满50美元即可享受",
+    "twoHundred": "2年保修",
+    "fullCoverage": "全面保障",
+    "featured": "精选",
+    "available": "件"
+  },
+  "CartPage": {
+    "loadingCart": "加载购物车中...",
+    "yourCart": "您的购物车",
+    "cartIsEmpty": "购物车为空",
+    "clearCart": "清空购物车",
+    "continueShopping": "继续购物",
+    "orderSummary": "订单摘要",
+    "subtotal": "小计",
+    "shipping": "运费",
+    "total": "总计",
+    "free": "免费",
+    "proceedToCheckout": "前往结算"
+  },
+  "ProductFilter": {
+    "filters": "筛选条件",
+    "searchProducts": "搜索商品...",
+    "selectCategories": "选择分类...",
+    "noProductsFound": "未找到商品",
+    "categories": "分类",
+    "searchCategories": "搜索分类...",
+    "noCategoriesFound": "未找到分类",
+    "priceRange": "价格区间",
+    "applyFilters": "应用筛选",
+    "resetFilters": "重置筛选"
+  },
+  "AboutUs": {
+    "companyName": "Oukra",
+    "title": "关于我们",
+    "subtitle": "Oukra公司开创性空调与制冷解决方案 \"构建更舒适、可持续的未来\"",
+    "vision": {
+      "title": "我们的愿景",
+      "description": "提供创新、可持续的气候控制解决方案，超越客户期望"
+    },
+    "whyChoose": {
+      "title": "为什么选择Oukra?",
+      "points": [
+        "- 10年以上专业经验：自2013年以来的可信赖解决方案",
+        "- 强大的分销网络：可靠的本地和国际物流",
+        "- 24/7支持：售后服务和专业技术支持",
+        "- 认证品质"
+      ]
+    },
+    "operations": {
+      "title": "我们的运营",
+      "description": "本地与全球 ✔ 覆盖世界各地"
+    },
+    "expertise": {
+      "title": "我们的专长",
+      "section1": {
+        "title": "先进制冷系统:",
+        "points": ["- 中央空调和管道空调机组", "- 商业和工业制冷解决方案"]
+      },
+      "section2": {
+        "title": "优质备件:",
+        "points": ["- 进口高质量制冷组件", "- 端到端的技术支持和维护"]
+      }
+    }
+  },
+  "CTA": {
+    "companyName": "欧科公司",
+    "title": "联系我们",
+    "subtitle": "欧科成立于2013年，是尖端空调与制冷系统的领先进出口商。我们于2015年获得商业商标权，这巩固了我们对*品质、可靠性和创新*的承诺。品质、可靠性和创新"
+  },
+  "Footer": {
+    "subtitle": "欧科公司：引领空调与制冷解决方案\"构建更舒适、可持续的未来\"",
+    "address": "地址",
+    "info": "信息",
+    "latestBlog": "最新博客",
+    "links": {
+      "home": "首页",
+      "products": "产品",
+      "about": "关于我们",
+      "contact": "联系我们"
+    }
+  }
+}

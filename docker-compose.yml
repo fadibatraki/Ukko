@@ -1,0 +1,56 @@
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ecommerce
+      POSTGRES_PASSWORD: dontasktheleaderwhatthepasswordis
+      POSTGRES_DB: ecommerce
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: ecommerce
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://ecommerce:dontasktheleaderwhatthepasswordis@postgres:5432/ecommerce
+      - BETTER_AUTH_SECRET=XHqeWJwEA7cmkSYzENldcgIqpmqYGDJw
+      - BETTER_AUTH_URL=https://oukra.net
+      - NODE_ENV=production
+    depends_on:
+      postgres:
+        condition: service_started
+    volumes:
+      - app_uploads:/app/public/uploads
+    restart: unless-stopped
+    command: sh -c "npm run prisma:migrate:deploy && npm start"
+
+  caddy:
+    build:
+      context: .
+      dockerfile: Dockerfile.caddy
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+
+volumes:
+  app_uploads:
+  postgres_data:
+  caddy_data:
+  caddy_config:
