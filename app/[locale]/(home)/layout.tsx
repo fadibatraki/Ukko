@@ -2,10 +2,13 @@ import type React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import AboutUs1 from "@/components/about-us1";
+import About from "@/components/about";
+import Testimonials from "@/components/Testimonials/index";
+
 
 import CatalogCard from "@/components/catalog-card";
 
-import CTA from "@/components/cta";
+
 import Hero from "@/components/hero";
 import prisma from "@/lib/prisma";
 
@@ -64,11 +67,14 @@ export default async function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Header products={products} categories={categories} />
             <Hero />
+             <About />
             <main className="flex-1">{children}</main>
-         
+             
+                <Testimonials />
+               
             <CatalogCard catalogs={catalogs} />
-            <CTA />
-            <AboutUs1 />
+   
+            {/* <AboutUs1 /> */}
             <Footer />
           </div>
         </NextIntlClientProvider>

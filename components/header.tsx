@@ -55,7 +55,7 @@ export default function Header({
           <div className="flex items-center">
             <Link href="/" className="mr-8">
               <Image
-                src="/assets/img/logo/logo.svg" // Make sure this path matches your actual logo path
+                src="/assets/img/logo/logoukko.png" // Make sure this path matches your actual logo path
                 alt="Logo"
                 width={120} // Adjust size as needed
                 height={40}

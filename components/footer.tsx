@@ -4,8 +4,8 @@ export default function Footer() {
   const t = useTranslations("Footer");
   return (
     <footer
-      className="wow fadeInUp relative z-10 bg-cover bg-center bg-no-repeat pt-20 lg:pt-[100px]"
-      style={{ backgroundImage: "url('/assets/img/hero/3.jpg')" }}
+      className="wow fadeInUp relative z-10 bg-cover bg-black/20 bg-blend-overlay bg-center bg-no-repeat pt-20 lg:pt-[100px]"
+      style={{ backgroundImage: "url('/assets/img/hero/footer.png')" }}
       data-wow-delay=".15s"
     >
       <div className="container">
@@ -13,19 +13,39 @@ export default function Footer() {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <a
-                href="javascript:void(0)"
+                href="/"
                 className="mb-6 inline-block max-w-[160px]"
               >
-                <img
+                {/* <img
                   src="/assets/img/logo/logo-white.svg"
                   alt="logo"
                   className="max-w-full"
-                />
+                /> */}
+            <h4 className="mb-0 text-lg font-semibold text-white">
+               UKKO
+              </h4>
               </a>
               <p className="mb-8 max-w-[290px] text-base text-white">
-                {t("subtitle")}
+                Through our own R&D, we are dedicated to manufacturing acrylic frames, connectors, copper components and PCBa, etc. to export in the whole world.
               </p>
-              <div className="-mx-3 flex items-center">
+              
+            </div>
+          </div>
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
+            <div className="mb-10 w-full">
+              <h4 className="mb-6 text-lg font-semibold text-white">
+                {" "}
+                {t("address")}
+              </h4>
+              <ul>
+                <li>
+                  <p className="mb-8 max-w-[290px] text-base text-white">
+        Room 309, Building 4, Liantang Industry Park, 48 Kangzheng Road, Longgang District, Shenzhen, China
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="-mx-3 flex items-center">
                 <a
                   href="javascript:void(0)"
                   className="px-3 text-gray-7 hover:text-white"
@@ -89,28 +109,12 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
-            </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
-                {" "}
-                {t("address")}
-              </h4>
-              <ul>
-                <li>
-                  <p className="mb-8 max-w-[290px] text-base text-white">
-                    RM309,BLOCK 4 , LIANTANG INDUSTRAIL PARK , NO.48 KANG ZHENG
-                    RD , LONGGANG DISTRICT , SHENZHEN , CHINA
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          
 
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-4 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
+              <h4 className="mb-6 text-lg font-semibold text-white">
                 {t("info")}
               </h4>
               <div className="flex flex-col gap-3">
@@ -119,25 +123,17 @@ export default function Footer() {
                   className="group flex items-center gap-[22px] mb-2"
                 >
                   <span className="max-w-[280px] text-base text-gray-7 group-hover:text-white">
-                    Tel: 0086-755-25894470
+                    Tel: 86-755-25894470
                   </span>
                 </a>
 
-                <a
-                  href="fax:008675582667914"
-                  className="group flex items-center gap-[22px] mb-2"
-                >
-                  <span className="max-w-[280px] text-base text-gray-7 group-hover:text-white">
-                    Fax: 0086-755-82667914
-                  </span>
-                </a>
 
                 <a
-                  href="mailto:inf@oukra.net"
+                  href="mailto:info@ukko-co.com"
                   className="group flex items-center gap-[22px] mb-2"
                 >
                   <span className="max-w-[280px] text-base text-gray-7 group-hover:text-white">
-                    Email: inf@oukra.net
+                    Email: info@ukko-co.com
                   </span>
                 </a>
               </div>
@@ -146,7 +142,7 @@ export default function Footer() {
 
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-4 w-full">
-              <h4 className="mb-2 text-lg font-semibold text-white">
+              <h4 className="mb-6 text-lg font-semibold text-white">
                 {t("latestBlog")}
               </h4>
               <div className="flex flex-col gap-3">
@@ -181,27 +177,9 @@ export default function Footer() {
                   href="tel:008675525894470"
                   className="group flex items-center gap-[15px]"
                 >
-                  <div className="overflow-hidden rounded">
-                    <img
-                      className="w-20 h-25"
-                      src="/assets/img/footer/3.png"
-                      alt="blog"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded">
-                    <img
-                      className="w-20 h-25"
-                      src="/assets/img/footer/4.png"
-                      alt="blog"
-                    />
-                  </div>
-                  <div className="overflow-hidden rounded">
-                    <img
-                      className="w-20 h-25"
-                      src="/assets/img/footer/6.png"
-                      alt="blog"
-                    />
-                  </div>
+              
+                
+                
                 </a>
               </div>
             </div>
@@ -246,7 +224,7 @@ export default function Footer() {
                     target="_blank"
                     className="text-gray-1 hover:underline"
                   >
-                    Fadi Batraki
+                   Fadi Batraki
                   </a>
                 </p>
               </div>
