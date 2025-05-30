@@ -168,7 +168,7 @@ export default function Footer() {
                   <div className="overflow-hidden rounded">
                     <img
                       className="w-20 h-25"
-                      src="/assets/img/footer/5.png"
+                      src="/assets/img/footer/3.png"
                       alt="blog"
                     />
                   </div>
