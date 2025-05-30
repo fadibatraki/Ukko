@@ -27,7 +27,8 @@ export default function Footer() {
               </h4>
               </a>
               <p className="mb-8 max-w-[290px] text-base text-white">
-                Through our own R&D, we are dedicated to manufacturing acrylic frames, connectors, copper components and PCBa, etc. to export in the whole world.
+                  {t("subtitle")}
+           
               </p>
               
             </div>
@@ -41,8 +42,7 @@ export default function Footer() {
               <ul>
                 <li>
                   <p className="mb-8 max-w-[290px] text-base text-white">
-        Room 309, Building 4, Liantang Industry Park, 48 Kangzheng Road, Longgang District, Shenzhen, China
-                  </p>
+       {t("address1")}            </p>
                 </li>
               </ul>
             </div>

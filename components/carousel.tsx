@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";
 import {
   Carousel,
   CarouselApi,
@@ -22,7 +22,8 @@ type HeroCarouselProps = {
 
 const TWEEN_FACTOR_BASE = 0.2;
 
-export function HeroCarousel({ products }: HeroCarouselProps) {
+export default function HeroCarousel({ products }: HeroCarouselProps) {
+    const t = useTranslations("Hero");
   const [api, setApi] = React.useState<CarouselApi | undefined>();
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(api);
   const tweenFactor = useRef(0);
@@ -81,6 +82,8 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
       .on("slideFocus", tweenScale);
   }, [api, tweenScale]);
 
+
+
   return (
     <section
       id="home"
@@ -101,10 +104,10 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                   <h1
                     className="mb-4 text-3xl  font-extrabold leading-tight tracking-tight text-white drop-shadow-lg"
                   >
-                    In Ukko, we present <span className="italic text-secondary">technology</span> as an <span className="italic text-accent">art</span>
+                  {t("title1")} <span className="italic text-secondary"> {t("title2")}</span>  {t("title3")}<span className="italic text-accent"> {t("title4")}</span>
                   </h1>
                   <p className="mt-0 mb-0 text-m sm:text-m text-white/50">
-                    we are aiming to be one of the journeys of making the product from A to Z
+               {t("subtitle")}
                   </p>
                 </div>
 
@@ -156,7 +159,7 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                         href="#footer"
                         className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                       >
-                        Contact Us
+                        {t("contactus")}
                       </Link>
                     </li>
                     <li>
@@ -166,7 +169,7 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                         className="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                       >
 
-                        About Us
+                     {t("aboutus")}
                       </Link>
                     </li>
                   </ul>

@@ -1,7 +1,7 @@
 import "../app/tailwind.css";
 
 import prisma from "@/lib/prisma";
-import { HeroCarousel } from "./carousel";
+import HeroCarousel from "./carousel";
 
 export default async function Hero() {
   const products = await prisma.product.findMany({

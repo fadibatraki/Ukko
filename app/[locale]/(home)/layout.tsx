@@ -43,10 +43,13 @@ export default async function RootLayout({
     select: { name: true, name_zh: true, id: true },
     where: {
       OR: [
+        { name: { contains: "PCBa" } },
+        { name: { contains: "Smart Home" } },
         { name: { contains: "Copper" } },
-        { name: { contains: "Gas" } },
-        { name: { contains: "Insulation" } },
-        { name: { contains: "Compressors" } },
+        { name: { contains: "Frames" } },
+        { name: { contains: "Connects" } },
+        { name: { contains: "Screw" } },
+        { name: { contains: "Spring" } },
      //   { name: { contains: "Copper" } },
       ],
       // in: ["compressors", "Gas", "Copper", "Insulation"],

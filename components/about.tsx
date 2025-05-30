@@ -35,7 +35,7 @@ export default async function About() {
                   href="#"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Know More
+                 {t("button")}  
                 </Link>
               </div>
             </div>

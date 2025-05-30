@@ -9,8 +9,11 @@ import { DownloadIcon, BookOpenIcon } from "lucide-react";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { Catalog } from "@prisma/client";
+import { useTranslations } from "next-intl";
+
 
 const CatalogCard = ({ catalogs }: { catalogs: Catalog[] }) => {
+  const t = useTranslations("CatalogSection");
   const swiperRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
@@ -51,15 +54,14 @@ const CatalogCard = ({ catalogs }: { catalogs: Catalog[] }) => {
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[485px] text-center">
-              <span className="mb-2 block text-lg font-semibold text-primary">
-                Oukra
+             <span className="mb-2 block text-lg font-semibold text-primary">
+                {t("brand")}
               </span>
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black dark:text-white sm:text-4xl md:text-[40px]">
-                TOP CATALOGS
+                {t("title")}
               </h2>
               <p className="text-base text-gray-700 dark:text-gray-400">
-                Oukra Company Pioneering Air Conditioning & Refrigeration
-                Solutions "Building a More Comfortable and Sustainable Future"
+                {t("description")}
               </p>
             </div>
           </div>
