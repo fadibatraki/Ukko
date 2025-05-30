@@ -1,35 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-const About = () => {
+export default async function About() {
+  const t = await getTranslations("About");
   return (
     <section
       id="about"
       className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
     >
+
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  We Present Technology as an Art
-                  About us:
+
+                  {t("title")}
+                  <br />
+                  {t("subtitle")}
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
 
 
-                  Shenzhen UKKO Electronic Co., Ltd. specializes in the research and development, manufacturing, and export trade of electrical components, acrylic panels, and other related products worldwide.
-
-
-                  <br /> <br />
-                  Our team of skilled professionals is committed to continuously improving
-                  ourselves and expanding our market reach since our establishment.
+                  {t("subtitle1")}
 
                   <br /> <br />
-                  We prioritize establishing a robust internal quality assurance system and obtaining quality certifications to ensure our customers receive top-notch products.
-                  We have forged strong trade partnerships with numerous clients over time.
-                </p>
+                  {t("subtitle2")}
+                  <br /> <br />
+                  {t("subtitle3")}        </p>
 
                 <Link
                   href="#"
@@ -66,13 +66,13 @@ const About = () => {
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        09
+                        16
                       </span>
                       <span className="block text-base font-semibold text-white">
-                        We have
+                        Years of experience
                       </span>
                       <span className="block text-base font-medium text-white text-opacity-70">
-                        Years of experience
+                        We have
                       </span>
                     </div>
                     <div>
@@ -196,4 +196,4 @@ const About = () => {
   );
 };
 
-export default About;
+

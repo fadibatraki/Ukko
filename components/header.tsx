@@ -112,14 +112,7 @@ export default function Header({
 
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            <Link href="/cart" className="relative">
-              <ShoppingCart className="h-6 w-6" />
-              {mounted && totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
-                  {totalItems}
-                </span>
-              )}
-            </Link>
+        
 
             <Button
               variant="ghost"

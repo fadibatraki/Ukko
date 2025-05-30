@@ -141,9 +141,9 @@ export default async function ProductPage({
                 </span>
               </div>
               <Separator orientation="vertical" className="h-5" />
-              <span className="text-sm text-muted-foreground">
+              {/* <span className="text-sm text-muted-foreground">
                 SKU: {product.id.slice(0, 8).toUpperCase()}
-              </span>
+              </span> */}
             </div>
           </div>
 
@@ -166,7 +166,7 @@ export default async function ProductPage({
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-4">
               <AddToCartButton
                 product={product}
@@ -177,7 +177,7 @@ export default async function ProductPage({
                 {t("saveForLater")}
               </Button>
             </div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div className="flex items-start p-4 border rounded-lg">

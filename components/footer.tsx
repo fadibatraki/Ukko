@@ -4,6 +4,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
   return (
     <footer
+      id="footer"
       className="wow fadeInUp relative z-10 bg-cover bg-black/20 bg-blend-overlay bg-center bg-no-repeat pt-20 lg:pt-[100px]"
       style={{ backgroundImage: "url('/assets/img/hero/footer.png')" }}
       data-wow-delay=".15s"

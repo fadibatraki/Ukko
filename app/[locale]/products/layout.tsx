@@ -40,11 +40,10 @@ export default async function RootLayout({
     select: { name: true, name_zh: true, id: true },
     where: {
       OR: [
-        {name: {contains:"Copper"}},
-        {name: {contains:"Gas"}},
-        {name: {contains:"Copper"}},
-        {name: {contains:"Copper"}},
-        {name: {contains:"Copper"}},
+          { name: { contains: "Copper" } },
+        { name: { contains: "Gas" } },
+        { name: { contains: "Insulation" } },
+        { name: { contains: "Compressors" } },
       ]
         // in: ["compressors", "Gas", "Copper", "Insulation"],
         // contains: [""]
@@ -63,11 +62,11 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <div className="flex min-h-screen flex-col">
             <Header products={products} categories={categories} />
-            <Hero />
-            <main className="flex-1">{children}</main>
-            <CTA />
-            <CatalogCard catalogs={catalogs} />
-            <AboutUs1 />
+            {/* <Hero /> */}
+            <main className="flex-1 mt-12">{children}</main>
+            {/* <CTA /> */}
+            {/* <CatalogCard catalogs={catalogs} /> */}
+            {/* <AboutUs1 /> */}
             <Footer />
           </div>
         </NextIntlClientProvider>

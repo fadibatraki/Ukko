@@ -22,6 +22,7 @@ export async function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="overflow-hidden border-0">
       <div className="relative aspect-square border-1 rounded-3xl">
+      <div className="relative aspect-square ">
         <Link href={`/products/${product.id}`}>
           <Image
             src={imageUrl}
@@ -42,30 +43,39 @@ export async function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <CardContent className="p-4 mt-0">
-        <Link
-          href={`/category/${product.category.id}`}
-          className="mb-1 text-sm text-muted-foreground"
-        >
-          {locale === "zh" && product.category.name_zh
-            ? product.category.name_zh
-            : product.category.name}
-        </Link>
-        <Link href={`/products/${product.id}`} className="hover:underline">
-          <h3 className="font-semibold">
-            {locale === "zh" && product.name_zh
-              ? product.name_zh
-              : product.name}
-          </h3>
-        </Link>
-      </CardContent>
+  <Link
+    href={`/category/${product.category.id}`}
+    className="mb-1 text-sm text-muted-foreground"
+  >
+    {locale === "zh" && product.category.name_zh
+      ? product.category.name_zh
+      : product.category.name}
+  </Link>
 
-      <CardFooter className="flex flex-col p-4 pt-0 gap-3">
+  <div className="flex items-center justify-between gap-2">
+    <Link href={`/products/${product.id}`} className="hover:underline">
+      <h3 className="font-semibold">
+        {locale === "zh" && product.name_zh
+          ? product.name_zh
+          : product.name}
+      </h3>
+    </Link>
+    <div className="font-bold whitespace-nowrap">
+      {formatPrice(product.price ?? 0)}
+    </div>
+  </div>
+  
+</CardContent>
+
+</div>
+      {/* <CardFooter className="flex flex-col p-4 pt-0 gap-3">
         <div className="w-full flex items-center justify-between">
-          <div className="font-bold">{formatPrice(product.price ?? 0)}</div>
+        
         </div>
 
         <AddToCartButton product={product} className="w-full" size="sm" />
-      </CardFooter>
+      </CardFooter> */}
+      
     </Card>
   );
 }

@@ -153,7 +153,7 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                   <ul className="mb-0 flex flex-wrap items-center justify-center gap-5">
                     <li>
                       <Link
-                        href="https://nextjstemplates.com/templates/play"
+                        href="#footer"
                         className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                       >
                         Contact Us
@@ -161,8 +161,8 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                     </li>
                     <li>
                       <Link
-                        href="https://github.com/nextjsTemplates/play-nextjs"
-                        target="_blank"
+                        href="#about"
+                     
                         className="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                       >
 
@@ -186,9 +186,10 @@ export function HeroCarousel({ products }: HeroCarouselProps) {
                 >
                   <div className="mt-10">
                     <Image
-                      src="/assets/img/hero/hero-image.jpg"
+                      src="/assets/img/hero/hero-image1.png"
                       alt="hero"
-                      className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+                      className="mx-auto max-w-full rounded-xl rounded-tr-xl "
+                
                       width={845}
                       height={316}
                     />
