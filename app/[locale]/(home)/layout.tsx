@@ -21,8 +21,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "oukra",
-  description: "Pioneering Air Conditioning & Refrigeration Solutions",
+  title: "UKKO",
+  description: "",
 };
 
 export const dynamic = "force-dynamic";
