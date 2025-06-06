@@ -92,7 +92,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
       <div className="-mx-4 flex flex-wrap items-center">
 
 
-        <div className="w-full px-4">
+        <div className="w-full px-4 pt-10">
           <div
             className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
             data-wow-delay=".25s"
@@ -106,7 +106,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
                   >
                   {t("title1")} <span className="italic text-secondary"> {t("title2")}</span>  {t("title3")}<span className="italic text-accent"> {t("title4")}</span>
                   </h1>
-                  <p className="mt-0 mb-0 text-m sm:text-m text-white/50">
+                  <p className="mt-0 mb-10 text-m sm:text-m text-white/50">
                {t("subtitle")}
                   </p>
                 </div>
@@ -152,7 +152,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
               />
             ))}
           </div> */}
-                <div className=" embla__dots justify-center flex gap-2 pt-0 mb-2">
+                <div className=" embla__dots justify-center flex gap-2 pt-20 mb-2">
                   <ul className="mb-0 flex flex-wrap items-center justify-center gap-5">
                     <li>
                       <Link
@@ -188,14 +188,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
                   data-wow-delay=".25s"
                 >
                   <div className="mt-10">
-                    <Image
-                      src="/assets/img/hero/hero-image1.png"
-                      alt="hero"
-                      className="mx-auto max-w-full rounded-xl rounded-tr-xl "
-                
-                      width={845}
-                      height={316}
-                    />
+                 
                   </div>
                   <div className="absolute -left-9 bottom-0 z-[-1]">
 
