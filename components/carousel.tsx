@@ -23,7 +23,7 @@ type HeroCarouselProps = {
 const TWEEN_FACTOR_BASE = 0.2;
 
 export default function HeroCarousel({ products }: HeroCarouselProps) {
-    const t = useTranslations("Hero");
+  const t = useTranslations("Hero");
   const [api, setApi] = React.useState<CarouselApi | undefined>();
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(api);
   const tweenFactor = useRef(0);
@@ -87,7 +87,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
   return (
     <section
       id="home"
-    className="relative overflow-hidden bg-[url('/assets/img/hero/bg.png')] bg-cover bg-center bg-black/20 bg-blend-overlay pt-[120px] md:pt-[130px] lg:pt-[160px]"  >
+      className="relative overflow-hidden bg-[url('/assets/img/hero/bg.png')] bg-cover bg-center bg-black/20 bg-blend-overlay pt-[120px] md:pt-[130px] lg:pt-[160px]"  >
 
       <div className="-mx-4 flex flex-wrap items-center">
 
@@ -104,10 +104,10 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
                   <h1
                     className="mb-4 text-3xl  font-extrabold leading-tight tracking-tight text-white drop-shadow-lg"
                   >
-                  {t("title1")} <span className="italic text-secondary"> {t("title2")}</span>  {t("title3")}<span className="italic text-accent"> {t("title4")}</span>
+                    {t("title1")} <span className="italic text-secondary"> {t("title2")}</span>  {t("title3")}<span className="italic text-accent"> {t("title4")}</span>
                   </h1>
                   <p className="mt-0 mb-10 text-m sm:text-m text-white/50">
-               {t("subtitle")}
+                    {t("subtitle")}
                   </p>
                 </div>
 
@@ -165,11 +165,11 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
                     <li>
                       <Link
                         href="#about"
-                     
+
                         className="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                       >
 
-                     {t("aboutus")}
+                        {t("aboutus")}
                       </Link>
                     </li>
                   </ul>
@@ -188,7 +188,7 @@ export default function HeroCarousel({ products }: HeroCarouselProps) {
                   data-wow-delay=".25s"
                 >
                   <div className="mt-10">
-                 
+
                   </div>
                   <div className="absolute -left-9 bottom-0 z-[-1]">
 
