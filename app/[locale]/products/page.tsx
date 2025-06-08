@@ -56,14 +56,7 @@ export default async function ProductsPage({
       <h1 className="text-3xl font-bold mb-6">{t("allProducts")}</h1>
 
       <div className="flex flex-col md:flex-row gap-6">
-        <div className="w-full md:w-1/4">
-          <ProductFilter
-            categories={categories}
-            allProductNames={productsNames.map((p) => p.name)}
-            initialCategoryIds={categoryIds}
-           
-          />
-        </div>
+     
 
         <div className="w-full md:w-3/4">
           <Suspense fallback={<div>{t("loadingProducts")}</div>}>
