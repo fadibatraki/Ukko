@@ -168,7 +168,7 @@ export default async function AdminDashboard() {
               <tr className="bg-muted/50">
                 <th className="py-3 px-4 text-left font-medium">Name</th>
                 <th className="py-3 px-4 text-left font-medium">Category</th>
-                <th className="py-3 px-4 text-right font-medium">Price</th>
+             
                 <th className="py-3 px-4 text-center font-medium">Actions</th>
               </tr>
             </thead>
@@ -177,9 +177,7 @@ export default async function AdminDashboard() {
                 <tr key={product.id} className="border-t">
                   <td className="py-3 px-4">{product.name}</td>
                   <td className="py-3 px-4">{product.category.name}</td>
-                  <td className="py-3 px-4 text-right">
-                    ${parseFloat(product.price?.toString() ?? "0").toFixed(2)}
-                  </td>
+               
                   <td className="py-3 px-4 text-center">
                     <Button
                       asChild

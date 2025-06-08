@@ -45,8 +45,7 @@ export default async function RootLayout({
         { name: { contains: "Copper" } },
         { name: { contains: "Frames" } },
         { name: { contains: "Connects" } },
-        { name: { contains: "Screw" } },
-        { name: { contains: "Spring" } },
+     
       ]
         // in: ["compressors", "Gas", "Copper", "Insulation"],
         // contains: [""]

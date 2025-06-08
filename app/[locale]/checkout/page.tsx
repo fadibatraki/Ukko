@@ -25,9 +25,6 @@ export default function CheckoutPage() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const subtotal = items.reduce((total, item) => {
-    return total + item.price * item.quantity;
-  }, 0);
 
   if (items.length === 0) {
     router.push("/cart");
@@ -156,30 +153,15 @@ export default function CheckoutPage() {
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-4">Order Summary</h2>
 
-              <div className="space-y-4 mb-4">
-                {items.map((item) => (
-                  <div key={item.id} className="flex justify-between">
-                    <span>
-                      {item.name} x {item.quantity}
-                    </span>
-                    <span>${(item.price * item.quantity).toFixed(2)}</span>
-                  </div>
-                ))}
-              </div>
+            
 
               <div className="border-t pt-4 space-y-2">
-                <div className="flex justify-between">
-                  <span>Subtotal</span>
-                  <span>${subtotal.toFixed(2)}</span>
-                </div>
+              
                 <div className="flex justify-between">
                   <span>Shipping</span>
                   <span>Free</span>
                 </div>
-                <div className="border-t pt-2 mt-2 font-bold flex justify-between">
-                  <span>Total</span>
-                  <span>${subtotal.toFixed(2)}</span>
-                </div>
+             
               </div>
             </CardContent>
           </Card>

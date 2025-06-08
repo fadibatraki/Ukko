@@ -19,8 +19,7 @@ export default async function ProductsPage({
     page: number;
     pageSize: number;
     category: string;
-    minPrice: string;
-    maxPrice: string;
+   
     search: string;
   }>;
 }) {
@@ -28,8 +27,7 @@ export default async function ProductsPage({
     page = 1,
     pageSize = 20,
     category,
-    minPrice,
-    maxPrice,
+ 
     search,
   } = await searchParams;
   const categoryIds = category ? category.split(",") : [];
@@ -38,8 +36,7 @@ export default async function ProductsPage({
     page,
     pageSize,
     categoryIds,
-    minPrice,
-    maxPrice,
+
     search,
   });
 
@@ -64,7 +61,7 @@ export default async function ProductsPage({
             categories={categories}
             allProductNames={productsNames.map((p) => p.name)}
             initialCategoryIds={categoryIds}
-            initialPriceRange={[0, 10000]}
+           
           />
         </div>
 

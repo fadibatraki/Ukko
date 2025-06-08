@@ -2,7 +2,7 @@ import { AddToCartButton } from "@/components/add-to-cart-button";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Star, Truck, Shield } from "lucide-react";
-import { formatPrice } from "@/lib/utils";
+
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
 import { ProductImageGallery } from "@/components/product-image-gallery";
@@ -148,9 +148,7 @@ export default async function ProductPage({
           </div>
 
           <div>
-            <div className="text-3xl font-bold mb-4">
-              {formatPrice(product.price ?? 0)}
-            </div>
+      
 
             <Separator className="my-6" />
 

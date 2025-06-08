@@ -10,7 +10,7 @@ export async function GET() {
         name_zh: product.name_zh,
         description: product.description,
         description_zh: product.description_zh,
-        price: product.price,
+   
         images: {
           createMany: {
             data: product.images.map((im) => ({ url: im })),

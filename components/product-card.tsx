@@ -1,7 +1,7 @@
 // components/ProductCard.tsx
 import Image from "next/image";
 import { Product } from "@/lib/types";
-import { formatPrice } from "@/lib/utils";
+
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AddToCartButton } from "@/components/add-to-cart-button";
@@ -60,9 +60,7 @@ export async function ProductCard({ product }: ProductCardProps) {
           : product.name}
       </h3>
     </Link>
-    <div className="font-bold whitespace-nowrap">
-      {formatPrice(product.price ?? 0)}
-    </div>
+
   </div>
   
 </CardContent>

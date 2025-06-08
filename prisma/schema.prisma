@@ -13,7 +13,7 @@ model Product {
   name_zh        String?
   description    String?
   description_zh String?
-  price          Float?
+ 
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 

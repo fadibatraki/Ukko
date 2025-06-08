@@ -25,9 +25,7 @@ export default function CartPage() {
     );
   }
 
-  const subtotal = items.reduce((total, item) => {
-    return total + (item.price ?? 0) * item.quantity;
-  }, 0);
+ const subtotal = 0;
 
   if (items.length === 0) {
     return (
@@ -74,9 +72,7 @@ export default function CartPage() {
                             ? item.name_zh
                             : item.name}
                         </h3>
-                        <p className="text-sm text-gray-500 mb-2">
-                          ${item.price?.toFixed(2)}
-                        </p>
+                      
                         <div className="flex items-center">
                           <Button
                             variant="outline"
@@ -105,9 +101,7 @@ export default function CartPage() {
                         </div>
                       </div>
                       <div className="flex items-center mt-4 sm:mt-0">
-                        <p className="font-semibold mr-4">
-                          ${((item.price ?? 0) * item.quantity).toFixed(2)}
-                        </p>
+                      
                         <Button
                           variant="ghost"
                           size="icon"
