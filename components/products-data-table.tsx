@@ -80,20 +80,7 @@ export function ProductsDataTable({
         return <div className="font-medium">{row.getValue("name")}</div>;
       },
     },
-    {
-      accessorKey: "price",
-      header: ({ column }) => (
-        <DataTableColumnHeader column={column} title="Price" />
-      ),
-      cell: ({ row }) => {
-        const amount = parseFloat(row.getValue("price"));
-        const formatted = new Intl.NumberFormat("en-US", {
-          style: "currency",
-          currency: "USD",
-        }).format(amount);
-        return <div>{formatted}</div>;
-      },
-    },
+   
     {
       id: "category.name",
       accessorKey: "category.name",

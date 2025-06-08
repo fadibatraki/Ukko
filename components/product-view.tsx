@@ -5,7 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/lib/types";
-import { formatPrice } from "@/lib/utils";
+
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, ChevronRight } from "lucide-react";
@@ -83,9 +83,7 @@ export function ProductView({ product }: ProductViewProps) {
           </div>
         </div>
 
-        <div className="text-2xl font-bold">
-          {formatPrice(product.price ?? 0)}
-        </div>
+  
 
         <Separator />
 

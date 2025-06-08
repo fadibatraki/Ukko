@@ -16,7 +16,7 @@ export interface Product {
   name_zh: string | null;
   description: string | null;
   description_zh: string | null;
-  price: number | null;
+
   featured: boolean;
   slider: boolean;
   categoryId: string;
@@ -30,7 +30,7 @@ export interface CartItem {
   id: string;
   productId: string;
   name: string;
-  price: number;
+
   image: string;
   quantity: number;
 }

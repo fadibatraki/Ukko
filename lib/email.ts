@@ -29,12 +29,7 @@ export async function sendOrderConfirmationEmail({
   });
 
   const itemList = items
-    .map(
-      (item) =>
-        `- ${item.name} x ${item.quantity}: $${(item.price * item.quantity).toFixed(2)}`,
-    )
-    .join("\n");
-
+ 
   const text = `
 Hello ${name},
 

@@ -46,7 +46,7 @@ const formSchema = z.object({
   name_zh: z.string().optional(),
   description: z.string().nullable(),
   description_zh: z.string().optional(),
-  price: z.string().nullable(),
+  
   featured: z.boolean(),
   slider: z.boolean(),
   categoryId: z.string().min(1, "Category is required"),
@@ -75,7 +75,7 @@ export function ProductForm({ product, categories }: ProductFormProps) {
           name_zh: product.name_zh ?? "",
           description: product.description ?? "",
           description_zh: product.description_zh ?? "",
-          price: product.price?.toString(),
+      
           featured: product.featured,
           slider: product.slider,
           categoryId: product.categoryId,
@@ -84,7 +84,7 @@ export function ProductForm({ product, categories }: ProductFormProps) {
       : {
           name: "",
           description: "",
-          price: "",
+       
           featured: false,
           slider: false,
           categoryId: "",
@@ -230,30 +230,7 @@ export function ProductForm({ product, categories }: ProductFormProps) {
               )}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <FormField
-                control={form.control}
-                name="price"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Price</FormLabel>
-                    <FormControl>
-                      <div className="relative">
-                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-muted-foreground">
-                          $
-                        </span>
-                        <Input
-                          {...field}
-                          className="pl-7"
-                          value={field.value ?? ""}
-                        />
-                      </div>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
+            
 
             <FormField
               control={form.control}

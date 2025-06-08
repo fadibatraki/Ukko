@@ -6,7 +6,7 @@ type CartItem = {
   productId: string;
   name: string;
   name_zh?: string;
-  price: number | null;
+
   image: string;
   quantity: number;
 };
@@ -45,7 +45,7 @@ export const useCartStore = create<CartStore>()(
               productId: product.id,
               name: product.name,
               name_zh: product.name_zh,
-              price: product.price,
+          
               image: product.image,
               quantity,
             },

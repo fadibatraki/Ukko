@@ -8,20 +8,16 @@ export async function getProductsFiltered({
   page = 1,
   pageSize = 10,
   categoryIds = [],
-  minPrice = "0",
-  maxPrice = "100000",
+
   search = "",
 }: {
   page?: number;
   pageSize?: number;
   categoryIds?: string[];
-  minPrice?: string;
-  maxPrice?: string;
+
   search?: string;
 }) {
-  // Convert price values to numbers with fallback values
-  const minPriceNum = Number(minPrice) || 0;
-  const maxPriceNum = Number(maxPrice) || 100000;
+
 
   // Fetch products with pagination
   const data = await prisma.product.findMany({
@@ -36,12 +32,7 @@ export async function getProductsFiltered({
             }
           : {},
         categoryIds?.length > 0 ? { categoryId: { in: categoryIds } } : {},
-        {
-          price: {
-            gte: minPriceNum,
-            lte: maxPriceNum,
-          },
-        },
+      
       ],
     },
     include: {
@@ -68,12 +59,7 @@ export async function getProductsFiltered({
             }
           : {},
         categoryIds?.length > 0 ? { categoryId: { in: categoryIds } } : {},
-        {
-          price: {
-            gte: minPriceNum,
-            lte: maxPriceNum,
-          },
-        },
+      
       ],
     },
   });
@@ -118,7 +104,7 @@ interface ProductData {
   name_zh?: string | null;
   description: string | null;
   description_zh?: string | null;
-  price: string | null;
+
   featured: boolean;
   slider: boolean;
   categoryId: string;
@@ -132,7 +118,7 @@ export async function createProduct(data: ProductData) {
       name_zh: data.name_zh,
       description: data.description,
       description_zh: data.description_zh,
-      price: data.price ? +data.price : 0,
+    
       featured: data.featured,
       slider: data.slider,
       categoryId: data.categoryId,
@@ -159,7 +145,7 @@ export async function updateProduct(id: string, data: ProductData) {
       name_zh: data.name_zh,
       description: data.description,
       description_zh: data.description_zh,
-      price: data.price ? +data.price : 0,
+     
       featured: data.featured,
       slider: data.slider,
       categoryId: data.categoryId,

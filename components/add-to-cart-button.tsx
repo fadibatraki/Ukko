@@ -29,7 +29,7 @@ export function AddToCartButton({
       productId: product.id,
       name: product.name,
       name_zh: product.name_zh ?? "",
-      price: product.price,
+   
       image: product.images[0].url,
       quantity: 1,
     });
